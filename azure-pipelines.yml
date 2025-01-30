@@ -1,0 +1,13 @@
+trigger:
+- main 
+
+pool:
+  name: 'Default'
+
+steps:
+- task: AzureWebAppContainer@1
+  inputs:
+    azureSubscription: 'Azure for Students' 
+    appName: 'mihirwebapp' 
+    imageName: 'cosc1209registry.azurecr.io/webappserver'  
+    tag: 'latest'  
