@@ -8,7 +8,7 @@ pool:
 steps:
 - task: AzureWebAppContainer@1
   inputs:
-    azureSubscription: 'Azure for Students' 
+    azureSubscription: 'AzureForStudentsConnection' 
     appName: 'mihirwebapp' 
     imageName: 'cosc1209registry.azurecr.io/webappserver'  
     tag: 'latest'  
